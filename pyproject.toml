@@ -1,0 +1,19 @@
+[project]
+name = "secure-authetication-system"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "retr0",email = "kg3139120@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "argon2-cffi (>=25.1.0,<26.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "secure_authetication_system", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
